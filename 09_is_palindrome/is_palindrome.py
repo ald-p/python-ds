@@ -21,3 +21,9 @@ def is_palindrome(phrase):
         >>> is_palindrome('Noon')
         True
     """
+
+    clean_phrase = phrase.lower().replace(" ", "");
+    if clean_phrase == clean_phrase[::-1]:
+        return True
+    else: 
+        return False
